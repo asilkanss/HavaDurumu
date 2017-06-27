@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 20.?ub.2017 14:43:58 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="havadurumu.Hdurumu" table="Hdurumu" schema="dbo" catalog="deneme2" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="time" type="string">
+            <column name="time" length="31" />
+        </property>
+        <property name="max" type="java.lang.Double">
+            <column name="max" precision="53" scale="0" />
+        </property>
+        <property name="min" type="java.lang.Double">
+            <column name="min" precision="53" scale="0" />
+        </property>
+        <property name="location" type="string">
+            <column name="location" length="31" />
+        </property>
+    </class>
+</hibernate-mapping>
